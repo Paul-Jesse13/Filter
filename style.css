@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: "poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.container{
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    padding: 25px;
+    margin: auto;
+}
+.filter-buttons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 0 3.5%;
+}
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+button.active{
+    background: #ff523b;
+    color: #fff;
+}
+.filterable-class{
+    margin-top: 25px;
+    display: grid;
+    /* grid-auto-flow: column; */
+    /* grid-auto-rows: auto; */
+    grid-column-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 95% !important;
+    margin: 25px auto;
+}
+.card{
+    /* flex-basis: 20%; */
+    background: #fff;
+    min-width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    grid-column: auto;
+}
+.card.hide{
+    display: none;
+}
+.card img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.card.hide{
+    display: none;
+}
+.card-info{
+    padding: 15px 20px 20px;
+    background: #fff;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+.card-text{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
